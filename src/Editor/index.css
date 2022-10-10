@@ -1,0 +1,105 @@
+.dndflow {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow aside {
+    border-right: 1px solid #eee;
+    padding: 15px 10px;
+    font-size: 12px;
+    background: #fcfcfc;
+  }
+  
+  .dndflow aside .description {
+    margin-bottom: 10px;
+  }
+  
+  .dndflow .dndnode {
+    height: 20px;
+    padding: 4px;
+    border: 1px solid #1a192b;
+    background-color: #B6D8ED;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .dndflow .dndnode.input {
+    border-color: #0041d0;
+  }
+  
+  .dndflow .dndnode.output {
+    border-color: #ff0072;
+  }
+  
+  .dndflow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow .selectall {
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .dndflow {
+      flex-direction: row;
+    }
+  
+    .dndflow aside {
+      width: 20%;
+      max-width: 250px;
+      position: relative;
+      left: 17px;
+    }
+  }
+  .first-node{
+    width: 300px;
+    height:165px;
+    background: #fff;
+    border: 1px dashed #bbb;
+    color: #bbb;
+    box-shadow: none;
+    border-radius: 40px;
+  }
+  .normal-edge{
+      stroke-dasharray: 3;
+  }
+  .custom-node{
+    width: 300px;
+    background:white;
+    border: 3px solid #0fa2d8;
+    color: black;
+    box-shadow: none;
+    border-radius: 40px;
+  }
+  .text{
+    height: 20px;
+    width:80%;
+    margin:auto;
+    padding: 4px;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 17px;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+  .save__controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 4;
+    font-size: 12px;
+  }
+  
+  .save__controls button {
+    margin-left: 5px;
+  }

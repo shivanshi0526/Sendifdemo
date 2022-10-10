@@ -1,25 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import DnDFlow from "./Editor/App"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{width:"1400px", height:"1000px"}}>
+   <DnDFlow/>
     </div>
-  );
+  )
 }
 
 export default App;
