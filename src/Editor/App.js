@@ -81,12 +81,9 @@ const DnDFlow = () => {
                 drag_data = event.dataTransfer.getData("application/reactflow");
                 
                 event.preventDefault();
-                console.log("hdfghdgfdhgfhd",data, event.target)
                 const positionx = initialNodes[0].position
                 const positiony=(parseInt(initialNodes[0].position.y)+300)
-                console.log(initialNodes[0].position.x,initialNodes[0].position.y)
                 initialNodes.pop()
-                console.log(initialNodes, nodes, positionx)
                 const newNode = [
                     {
                         id: 'edges-1', type: 'customNode', position: positionx, data: { value: 123 }
@@ -133,10 +130,8 @@ const DnDFlow = () => {
                 drag_data = event.dataTransfer.getData("application/reactflow");
                 
                 event.preventDefault();
-                console.log("hdfghdgfdhgfhd",data, event.target)
                 const positionx = initialNodes[0].position
                 initialNodes.pop()
-                console.log(initialNodes, nodes, positionx)
                 const newNode = [
                     {
                         id: getId(), type: 'input', position: positionx, data: { value: 123 }
@@ -147,7 +142,6 @@ const DnDFlow = () => {
                 setNodes((nds) => [])
                 setNodes((nds) => nds.concat(newNode));
             },
-            console.log(initialNodes, nodes)
         );
 
         return (
@@ -174,7 +168,6 @@ const DnDFlow = () => {
                 var data = ev.dataTransfer.getData("text");
                 ev.target.appendChild(document.getElementById(data));
             },
-            console.log(initialNodes, nodes)
         );
 
         return (

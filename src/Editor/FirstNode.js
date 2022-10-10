@@ -11,7 +11,6 @@ function FirstNode({ data }) {
       const onDrop = useCallback(
         (event) => {
           event.preventDefault();
-          console.log("hdfghdgfdhgfhd")
         },
      
       );
